@@ -1,0 +1,28 @@
+.svg-circle, .svg-circle2{
+    width: 600px;
+    max-width: 100%;
+    rotate: -90deg;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    rotate: -90deg;
+}
+
+
+.svg-circle circle, .svg-circle2 circle{
+    fill: transparent;
+    /* stroke:#df2d64; */
+    stroke-width:2px;
+    transition: 0.2s;
+}
+
+.svg-circle2 circle{
+    stroke-width:1px;
+    stroke-dasharray: calc(100 * 283 / 100) 250;
+    stroke:#FFFFFF11;
+    transition: 0.2s;
+}
+

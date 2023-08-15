@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/Dropdown.js"></script>
+    <script defer src="js/FormatClock.js"></script>
+    <script defer src="js/Clock.js"></script>
+    <script defer src="js/ScreenApp.js"></script>
+    <script defer src="js/DigitalKeyboard.js"></script> 
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <setcion class="menu">
+        <div class="dropdown" id="dropdown_a">
+            <button id="bt_a" description="Long">04:00</button>
+            <div class="dropdown_list dropdown_in">
+                <div onclick="DigitalKeyboard1.add(1)">1</div>
+                <div onclick="DigitalKeyboard1.add(2)">2</div>
+                <div onclick="DigitalKeyboard1.add(3)">3</div>
+                <div onclick="DigitalKeyboard1.add(4)">4</div>
+                <div onclick="DigitalKeyboard1.add(5)">5</div>
+                <div onclick="DigitalKeyboard1.add(6)">6</div>
+                <div onclick="DigitalKeyboard1.add(7)">7</div>
+                <div onclick="DigitalKeyboard1.add(8)">8</div>
+                <div onclick="DigitalKeyboard1.add(9)">9</div>
+                <div onclick="DigitalKeyboard1.reset()">R</div>
+                <div onclick="DigitalKeyboard1.add(0)">0</div>
+                <div onclick="DigitalKeyboard1.start()">Go</div>
+            </div>
+        </div>
+
+        <b id="clock_count"># 0</b>
+
+        <div class="dropdown" id="dropdown_b">
+            <button id="bt_b" description="Short">02:00</button>
+            <div class="dropdown_list dropdown_in">
+                <div onclick="DigitalKeyboard2.add(1)">1</div>
+                <div onclick="DigitalKeyboard2.add(2)">2</div>
+                <div onclick="DigitalKeyboard2.add(3)">3</div>
+                <div onclick="DigitalKeyboard2.add(4)">4</div>
+                <div onclick="DigitalKeyboard2.add(5)">5</div>
+                <div onclick="DigitalKeyboard2.add(6)">6</div>
+                <div onclick="DigitalKeyboard2.add(7)">7</div>
+                <div onclick="DigitalKeyboard2.add(8)">8</div>
+                <div onclick="DigitalKeyboard2.add(9)">9</div>
+                <div onclick="DigitalKeyboard2.reset()">R</div>
+                <div onclick="DigitalKeyboard2.add(0)">0</div>
+                <div onclick="DigitalKeyboard2.start()">Go</div>
+            </div>
+        </div>
+    </setcion>
+
+    <section class="screen">
+           
+            <div class="square" id="square">
+                
+                <svg class="svg-circle2" viewBox="0 0 100 100">
+                    <circle  r="45" cx="50" cy="50" />
+                </svg>
+
+                <svg class="svg-circle" viewBox="0 0 100 100">
+                    <circle id="circle" r="45" cx="50" cy="50" 
+                    stroke-dasharray="calc(0 * 283 / 100) 283"
+                    stroke="#df2d64";
+                    />
+                </svg>
+
+
+                <div id="relogio">04:00</div> 
+
+            </div>
+            
+        </section>
+        <img onclick="screenApp.control.reset()" class="bt_reset" src="./imgs/back_time.svg">
+        
+</body>
+</html>
