@@ -75,7 +75,7 @@ class Clock {
         //     this.count++
         // }
 
-        if(screenApp.getCountDown() == 0 && this.mode == 1 ){
+        if(this.currentTime == 0 && this.mode == 0 ){
             this.count++
         }
 

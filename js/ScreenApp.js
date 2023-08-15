@@ -46,7 +46,7 @@ class ScreenApp extends Clock{
             },
             reset(){
                 t.currentTime = 0
-                // this.currentTime = 0
+                t.count = 1
                 // this.reset()
                 // this.update()
                 t.render()
