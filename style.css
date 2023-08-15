@@ -39,7 +39,7 @@ b{
     padding: 10px;
 } */
 
-.canto{ position: absolute; margin: auto; padding: 10px;}
+.canto{ position: fixed; margin: auto; padding: 10px;}
 
 .canto-a{ top: 0px; left: 0px; }
 .canto-b{ top: 0px; left: 0px; right: 0px; }
